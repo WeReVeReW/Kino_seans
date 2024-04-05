@@ -1,0 +1,43 @@
+.bg_form{
+    -fx-background-color: linear-gradient(to top right, #02bafd,#1818f6);
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-text-inner-color:#000000;
+    -fx-border-color: #02bafd;
+    -fx-border-width: 0px 0px .4px 0px;
+}
+
+.minimaze{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.minimaze:hover{
+    -fx-background-color: #1818f6;
+}
+
+.minimaze-close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.minimaze-close:hover{
+    -fx-background-color: #ff3131;
+} 
+
+.textfield:focused{
+    -fx-border-color: #1818f6;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right, #02bafd,#1818f6);
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #0294c9,#1212b7);
+}

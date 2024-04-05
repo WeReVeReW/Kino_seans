@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="bg_form" stylesheets="@../../../design/designLogin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kino_seans.ControllerLogin">
+   <children>
+      <Button fx:id="signin_close_button" layoutX="639.0" layoutY="2.0" mnemonicParsing="false" onAction="#signIn_close" prefHeight="30.0" prefWidth="61.0" styleClass="minimaze-close" textFill="#f5f5f5" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" />
+         </graphic>
+      </Button>
+      <Button fx:id="signin_minimaze" layoutX="602.0" layoutY="2.0" minWidth="36.0" mnemonicParsing="false" onAction="#signIn_minimaze" prefHeight="30.0" prefWidth="36.0" styleClass="minimaze" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="5.0">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="MINUS" />
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="signIn_form" layoutY="84.0" prefHeight="318.0" prefWidth="700.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <FontAwesomeIcon glyphName="USER" layoutX="317.0" layoutY="83.0" size="6em" styleClass="bg_form" wrappingWidth="67.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.8009478672985783">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.007843137718737125" green="0.729411780834198" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.0941176488995552" green="0.0941176488995552" blue="0.9647058844566345" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </FontAwesomeIcon>
+            <TextField fx:id="login_field" layoutX="186.0" layoutY="129.0" onAction="#signin" prefHeight="25.0" prefWidth="330.0" promptText="Логин" styleClass="textfield">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password_field" layoutX="185.0" layoutY="167.0" onAction="#signin" prefHeight="25.0" prefWidth="330.0" promptText="Пароль" styleClass="textfield">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginAuthButton" layoutX="184.0" layoutY="229.0" mnemonicParsing="false" onAction="#signin" prefHeight="40.0" prefWidth="330.0" text="Войти" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="MS Gothic" size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="bg_form" />
+                  <String fx:value="login-btn" />
+               </styleClass>
+            </Button>
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" depthTest="ENABLE" ellipsisString="" layoutX="261.0" layoutY="94.0" text="Авторизация" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+               <textFill>
+                  <LinearGradient startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0941176488995552" green="0.0941176488995552" blue="0.9647058844566345" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.125" green="0.78125" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="222.0" layoutY="14.0" text="KINO_SEANS" textFill="WHITE">
+         <font>
+            <Font name="GeoSlab703 Md BT Bold" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
